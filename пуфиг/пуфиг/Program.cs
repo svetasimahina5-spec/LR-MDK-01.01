@@ -10,6 +10,7 @@ namespace пуфиг
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("ПОПИК");
         }
     }
 }
