@@ -10,7 +10,14 @@ namespace пуфиг
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("ПОПИК");
+            Console.Write("Введите первое число a:");
+            int a = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите второе число b:");
+            int b = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите третье число c:");
+            int c = int.Parse(Console.ReadLine());
         }
     }
 }
