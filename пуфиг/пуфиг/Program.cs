@@ -18,6 +18,11 @@ namespace пуфиг
 
             Console.Write("Введите третье число c:");
             int c = int.Parse(Console.ReadLine());
+
+            int max = a;
+
+            if (b > max) max = b;
+            if (c > max) max = c;
         }
     }
 }
