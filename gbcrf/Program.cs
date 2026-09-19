@@ -14,7 +14,7 @@ namespace gbcrf
             int n = int.Parse(Console.ReadLine());
 
             int[] numbers = new int[n];
-
+            h
             int even = 0;
             int odd = 0;
 
