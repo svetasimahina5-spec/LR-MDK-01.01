@@ -6,10 +6,22 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Program
+    public static class Program
     {
         static void Main(string[] args)
         {
+            List<BudgetCategory> categories = BudgetManager.CreateDefaultCategories();
+
+            BudgetManager.PrintCategories(categories);
+
+            Dictionary<int, decimal> plan = BudgetManager.ReadPlan(categories);
+
+            bool accepted = BudgetManager.TryApplyPlan(categories, plan);
+
+            if (accepted)
+                BudgetManager.PrintTotalExpenses(plan);
+
+            BudgetManager.PrintRemaining(categories);
         }
     }
 }
