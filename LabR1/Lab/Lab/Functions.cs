@@ -22,5 +22,10 @@ namespace Lab
                 Console.WriteLine("Ошибка: введите положительное число. Повторите ввод.");
             }
         }
+        public static int CalculateStrips(double length, double width, double rollWidth)
+        {
+            double perimeter = 2 * (length + width);
+            return (int)Math.Ceiling(perimeter / rollWidth);
+        }
     }
 }
