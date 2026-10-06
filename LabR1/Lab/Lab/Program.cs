@@ -11,14 +11,6 @@ namespace Lab
         static void Main(string[] args)
         {
             double length = Functions.ReadPositiveDouble("Введите длину комнаты (м): ");
-            double length = Functions.ReadPositiveDouble("Введите длину комнаты (м): ");
-            double length = Functions.ReadPositiveDouble("Введите длину комнаты (м): ");
-            double length = Functions.ReadPositiveDouble("Введите длину комнаты (м): ");
-            double length = Functions.ReadPositiveDouble("Введите длину комнаты (м): ");
-            double length = Functions.ReadPositiveDouble("Введите длину комнаты (м): ");
-            double length = Functions.ReadPositiveDouble("Введите длину комнаты (м): ");
-            double length = Functions.ReadPositiveDouble("Введите длину комнаты (м): ");
-            double length = Functions.ReadPositiveDouble("Введите длину комнаты (м): ");
             double width = Functions.ReadPositiveDouble("Введите ширину комнаты (м): ");
             double height = Functions.ReadPositiveDouble("Введите высоту комнаты (м): ");
             double rollWidth = Functions.ReadPositiveDouble("Введите ширину рулона (м): ");
