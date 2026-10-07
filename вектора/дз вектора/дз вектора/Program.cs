@@ -12,7 +12,7 @@ namespace дз_вектора
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            int arraySize = 15; 
+            int arraySize = 1000; 
             Vector[] vectors = new Vector[arraySize];
             Random rnd = new Random();
 
@@ -23,12 +23,9 @@ namespace дз_вектора
                     new Point(rnd.Next(-10, 11), rnd.Next(-10, 11))
                 );
             }
-            vectors[3] = Vector.CreateVector(new Point(0, 0), new Point(5, 5));
-            vectors[7] = Vector.CreateVector(new Point(0, 0), new Point(5, 5));
-            vectors[12] = Vector.CreateVector(new Point(0, 0), new Point(5, 5));
 
-            Console.WriteLine("=== 1. ВИЗУАЛИЗАЦИЯ ВЕКТОРОВ (СТРЕЛОЧКИ) ===");
-            PrintVectorsVisual(vectors);
+            Console.WriteLine("=== 1. ВИЗУАЛИЗАЦИЯ ВЕКТОРОВ (ПЕРВЫЕ 5 ШТУК) ===");
+            PrintFirstVectorsVisual(vectors, 5);
 
             Console.WriteLine("\n=== 2. ПОИСК ОДИНАКОВЫХ ВЕКТОРОВ ===");
             FindAndPrintDuplicates(vectors);
@@ -36,14 +33,16 @@ namespace дз_вектора
             Console.ReadLine();
         }
 
-        static void PrintVectorsVisual(Vector[] vectors)
+        static void PrintFirstVectorsVisual(Vector[] vectors, int count)
         {
-            for (int i = 0; i < vectors.Length; i++)
+            int limit = Math.Min(count, vectors.Length);
+            for (int i = 0; i < limit; i++)
             {
                 Console.WriteLine($"Вектор #{i}: {vectors[i].Start.X_},{vectors[i].Start.Y_} -> {vectors[i].End.X_},{vectors[i].End.Y_}");
                 VectorRenderer.DrawArrow(vectors[i]);
                 Console.WriteLine();
             }
+            Console.WriteLine("... (остальные векторы скрыты для экономии места)");
         }
 
         static void FindAndPrintDuplicates(Vector[] vectors)
@@ -89,7 +88,7 @@ namespace дз_вектора
 
             if (!foundAny)
             {
-                Console.WriteLine("Одинаковых векторов не найдено.");
+                Console.WriteLine("Одинаковых векторов не найдено. Попробуйте увеличить arraySize.");
             }
         }
     }
