@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BudgetManager.cs" />
     <Compile Include="BudgetPlanner.cs" />
     <Compile Include="ConsoleUI.cs" />
     <Compile Include="Program.cs" />
