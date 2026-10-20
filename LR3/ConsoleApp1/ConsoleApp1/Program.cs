@@ -21,6 +21,8 @@ namespace ConsoleApp1
                 BudgetManager.ApplyPlan(plan);
                 BudgetManager.PrintTotalExpenses(plan);
             }
+
+            BudgetManager.PrintRemaining();
         }
     }
 }
