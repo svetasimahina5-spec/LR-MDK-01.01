@@ -21,5 +21,18 @@ namespace ConsoleApp1
                 Console.WriteLine("Ошибка: введите целое число.");
             }
         }
+        public static int ReadCategoryNumber(string prompt, int max)
+        {
+            while (true)
+            {
+                int value = ReadInt(prompt);
+                if (value == 0)
+                    return 0;
+                if (value >= 1 && value <= max)
+                    return value;
+
+                Console.WriteLine("Ошибка: номер категории должен быть от 1 до " + max + " или 0.");
+            }
+        }
     }
 }
