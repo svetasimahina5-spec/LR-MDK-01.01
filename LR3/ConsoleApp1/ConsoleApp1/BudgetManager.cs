@@ -63,6 +63,16 @@ namespace ConsoleApp1
             }
             Console.WriteLine("Общая сумма расходов: " + total + " руб.");
         }
-
+        public static void PrintRemaining()
+        {
+            Console.Write("Остаток лимита: ");
+            for (int i = 0; i < BudgetData.Count; i++)
+            {
+                Console.Write(BudgetData.names_[i] + " " + BudgetData.Remaining(i));
+                if (i < BudgetData.Count - 1)
+                    Console.Write(", ");
+            }
+            Console.WriteLine();
+        }
     }
 }
