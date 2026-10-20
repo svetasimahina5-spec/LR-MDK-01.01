@@ -15,6 +15,12 @@ namespace ConsoleApp1
            BudgetManager.PrintCategories();
 
            decimal[] plan = BudgetManager.ReadPlan();
+
+            if (BudgetManager.CheckPlan(plan))
+            {
+                BudgetManager.ApplyPlan(plan);
+                BudgetManager.PrintTotalExpenses(plan);
+            }
         }
     }
 }
