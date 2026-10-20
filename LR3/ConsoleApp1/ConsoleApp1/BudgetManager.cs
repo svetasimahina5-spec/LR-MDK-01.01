@@ -17,5 +17,23 @@ namespace ConsoleApp1
                     + " руб., лимит " + BudgetData.limits_[i] + " руб.");
             }
         }
+        public static decimal[] ReadPlan()
+        {
+            decimal[] plan = new decimal[BudgetData.Count];
+
+            while (true)
+            {
+                int number = InputHelper.ReadCategoryNumber("Введите номер категории (0 — конец плана): ", BudgetData.Count);
+
+                if (number == 0)
+                    break;
+
+                decimal sum = InputHelper.ReadNonNegativeDecimal("Введите сумму: ");
+                plan[number - 1] += sum;
+            }
+
+            return plan;
+        }
+
     }
 }
