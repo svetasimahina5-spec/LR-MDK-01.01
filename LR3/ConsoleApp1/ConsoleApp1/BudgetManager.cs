@@ -54,6 +54,15 @@ namespace ConsoleApp1
                 BudgetData.spent_[i] += plan[i];
             }
         }
+        public static void PrintTotalExpenses(decimal[] plan)
+        {
+            decimal total = 0m;
+            for (int i = 0; i < plan.Length; i++)
+            {
+                total += plan[i];
+            }
+            Console.WriteLine("Общая сумма расходов: " + total + " руб.");
+        }
 
     }
 }
