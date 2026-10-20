@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Бюджет", "Бюджет\Бюджет.csproj", "{F67E14E4-50A2-4CEC-ACB8-75CAA19524BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F67E14E4-50A2-4CEC-ACB8-75CAA19524BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F67E14E4-50A2-4CEC-ACB8-75CAA19524BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F67E14E4-50A2-4CEC-ACB8-75CAA19524BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F67E14E4-50A2-4CEC-ACB8-75CAA19524BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F537FBF0-3B2A-4994-A8A8-EB44D3025078}
+	EndGlobalSection
+EndGlobal
