@@ -10,7 +10,11 @@ namespace Бюджет
     {
         static void Main(string[] args)
         {
+            ConsoleUI.PrintInitialCategories();
+            BudgetManager.ProcessUserInput();
+            BudgetManager.CalculateAndShowFinalPlan();
 
+            Console.ReadLine();
         }
     }
 }
