@@ -8,10 +8,10 @@ namespace ConsoleApp1
 {
     public enum CategoryIndex
     {
-        Products = 0,
-        Transport = 1,
-        Housing = 2,
-        Entertainment = 3,
-        Clothing = 4
+        products_ = 0,
+        transport_ = 1,
+        housing_ = 2,
+        entertainment_ = 3,
+        clothing_ = 4
     }
 }
