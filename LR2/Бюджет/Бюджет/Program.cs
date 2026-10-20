@@ -10,6 +10,7 @@ namespace Бюджет
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
