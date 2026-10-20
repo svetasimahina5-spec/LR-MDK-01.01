@@ -34,5 +34,18 @@ namespace ConsoleApp1
                 Console.WriteLine("Ошибка: номер категории должен быть от 1 до " + max + " или 0.");
             }
         }
+        public static decimal ReadNonNegativeDecimal(string prompt)
+        {
+            while (true)
+            {
+                Console.Write(prompt);
+                string input = Console.ReadLine();
+                decimal value;
+                if (decimal.TryParse(input, out value) && value >= 0)
+                    return value;
+
+                Console.WriteLine("Ошибка: введите неотрицательное число.");
+            }
+        }
     }
 }
