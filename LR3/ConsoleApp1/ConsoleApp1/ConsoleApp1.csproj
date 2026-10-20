@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BudgetData.cs" />
+    <Compile Include="BudgetManager.cs" />
     <Compile Include="CategoryIndex.cs" />
     <Compile Include="InputHelper.cs" />
     <Compile Include="Program.cs" />
