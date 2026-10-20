@@ -47,6 +47,13 @@ namespace ConsoleApp1
             }
             return true;
         }
+        public static void ApplyPlan(decimal[] plan)
+        {
+            for (int i = 0; i < BudgetData.Count; i++)
+            {
+                BudgetData.spent_[i] += plan[i];
+            }
+        }
 
     }
 }
