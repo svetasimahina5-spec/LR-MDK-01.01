@@ -13,6 +13,8 @@ namespace ConsoleApp1
            BudgetData.Init();
 
            BudgetManager.PrintCategories();
+
+           decimal[] plan = BudgetManager.ReadPlan();
         }
     }
 }
