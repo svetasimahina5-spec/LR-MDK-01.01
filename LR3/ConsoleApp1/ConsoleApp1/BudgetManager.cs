@@ -34,6 +34,19 @@ namespace ConsoleApp1
 
             return plan;
         }
+        public static bool CheckPlan(decimal[] plan)
+        {
+            for (int i = 0; i < BudgetData.Count; i++)
+            {
+                if (plan[i] > BudgetData.Remaining(i))
+                {
+                    Console.WriteLine("Недостаточно лимита по категории «" + BudgetData.names_[i] + "»: остаток " + BudgetData.Remaining(i)
+                        + " руб., запланировано " + plan[i] + " руб.");
+                    return false;
+                }
+            }
+            return true;
+        }
 
     }
 }
