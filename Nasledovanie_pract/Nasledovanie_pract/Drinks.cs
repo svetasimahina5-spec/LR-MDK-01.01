@@ -8,7 +8,7 @@ namespace Nasledovanie_pract
 {
     public class Drinks : Product
     {
-        public override double CalculeteDiscont()
+        public override double CalculateDiscont()
         {
             if (count_ >= 20 && count_ < 150)
             {
@@ -22,6 +22,8 @@ namespace Nasledovanie_pract
             {
                 return 50;
             }
+
+            return 0;
 
         }
     }

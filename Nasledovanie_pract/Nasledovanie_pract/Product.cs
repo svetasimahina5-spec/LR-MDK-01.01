@@ -43,7 +43,7 @@ namespace Nasledovanie_pract
             return count_;
         }
 
-        public virtual double CalculeteDiscont()
+        public virtual double CalculateDiscont()
         {
             return 0;
         }

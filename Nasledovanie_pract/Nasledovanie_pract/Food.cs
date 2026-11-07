@@ -8,7 +8,7 @@ namespace Nasledovanie_pract
 {
    public class Food:Product
     {
-        public override double CalculeteDiscont()
+        public override double CalculateDiscont()
         {
             if (count_ >= 5 && count_ < 10)
             {
@@ -18,8 +18,8 @@ namespace Nasledovanie_pract
             {
                 return 25;
             }
-            
 
+            return 0;
         }
     }
 }
