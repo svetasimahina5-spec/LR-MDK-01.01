@@ -42,5 +42,11 @@ namespace Nasledovanie_pract
         {
             return count_;
         }
+
+        public virtual double Sale()
+        {
+            return 0;
+        }
     }
+     
 }
