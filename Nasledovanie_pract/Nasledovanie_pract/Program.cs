@@ -13,7 +13,7 @@ namespace Nasledovanie_pract
             List<Product> products = new List<Product>();
 
             Product baseProd = new Product();
-            baseProd.SetName("Базовый товар");
+            baseProd.SetName("Игрушка");
             baseProd.SetPrice(100);
             baseProd.SetCount(15);
             products.Add(baseProd);
