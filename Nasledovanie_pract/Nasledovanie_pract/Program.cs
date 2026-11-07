@@ -48,12 +48,20 @@ namespace Nasledovanie_pract
             drink3.SetCount(350);
             products.Add(drink3);
 
-            Console.WriteLine("Список товаров и их скидки");
+            
             foreach (var item in products)
             {
-                Console.WriteLine($"Товар:{item.GetName()},Кол-во:{item.GetCount()},Скидка{item.CalculateDiscont()}%");
+                string name = item.GetName();
+                int price = item.GetPrice();
+                int count = item.GetCount();
+                double discount = item.CalculateDiscont();
+
+                double totalCost = price * count;
+
+                double finalSum = totalCost - (totalCost * discount / 100);
+
+                Console.WriteLine($"Товар:{item.GetName()},Цена:{price},Кол-во:{item.GetCount()},Стоимость:{totalCost},Скидка{item.CalculateDiscont()}%, Сумма со скидкой: {finalSum}");
             }
-            
         }
     }
 }
