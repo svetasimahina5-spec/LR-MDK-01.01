@@ -33,8 +33,32 @@ namespace Nasledovanie_pract
                     int count = int.Parse(parts[1].Trim());
                     int price = int.Parse(parts[2].Trim()); 
                     string type = parts[3].Trim();
+
+                    Product product = null;
+
+                    if (type.Equals("Food", StringComparison.OrdinalIgnoreCase))
+                    {
+                        product = new Food();
+                    }
+                    else if (type.Equals("Drinks", StringComparison.OrdinalIgnoreCase))
+                    {
+                        product = new Drinks();
+                    }
+                    else
+                    {
+                        product = new Product();
+                    }
+
+                    product.SetName(name);
+                    product.SetCount(count);
+                    product.SetPrice(price);
+
+                    loadedProducts.Add(product);
                 }
             }
+
+            return loadedProducts;
         }
     }
 }
+    
