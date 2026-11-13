@@ -19,7 +19,7 @@ namespace Nasledovanie_pract
                 return 25;
             }
 
-            return 0;
+            return base.CalculateDiscont();
         }
     }
 }
