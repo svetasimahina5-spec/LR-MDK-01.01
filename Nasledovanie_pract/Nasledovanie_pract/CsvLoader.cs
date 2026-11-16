@@ -36,17 +36,22 @@ namespace Nasledovanie_pract
 
                     Product product = null;
 
-                    if (type.Equals("Food", StringComparison.OrdinalIgnoreCase))
+                    switch (type)
                     {
-                        product = new Food();
-                    }
-                    else if (type.Equals("Drinks", StringComparison.OrdinalIgnoreCase))
-                    {
-                        product = new Drinks();
-                    }
-                    else
-                    {
-                        product = new Product();
+                        case "food":
+                        case "еда":
+                            product = new Food();
+                            break;
+
+                        case "drinks":
+                        case "напитки":
+                        case "напиток":
+                            product = new Drinks();
+                            break;
+
+                        default:
+                            product = new Product();
+                            break;
                     }
 
                     product.SetName(name);

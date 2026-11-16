@@ -11,7 +11,7 @@ namespace Nasledovanie_pract
     {
         static void Main(string[] args)
         {
-            string filePath = @"C:\Csv-файл\Файл.csv";
+            string filePath = @"C:\Csv-файл\файл.csv";
             if(File.Exists(filePath))
             {
                 
